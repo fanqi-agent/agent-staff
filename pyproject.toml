@@ -1,0 +1,22 @@
+[project]
+name = "agent-staff"
+version = "0.1.0"
+description = "Multi-agent Telegram collaboration framework for software development"
+requires-python = ">=3.11"
+dependencies = [
+    "python-telegram-bot[all]>=21.0",
+    "openai>=1.0",
+    "gitpython>=3.1",
+    "pydantic>=2.0",
+    "pydantic-settings>=2.0",
+    "pyyaml>=6.0",
+    "aiofiles>=24.0",
+    "python-dotenv>=1.0",
+    "langgraph>=0.2",
+    "playwright>=1.40",
+]
+
+[project.scripts]
+agent-staff = "src.main:main"
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
